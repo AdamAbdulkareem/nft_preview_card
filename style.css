@@ -8,6 +8,8 @@
 }
 
 body {
+   display: grid;
+   height: 100vh;
   font-family: "Outfit", sans-serif;
   font-weight: 500;
   background-color: var(--VeryDarkBlue);
@@ -30,16 +32,24 @@ nav {
 /* Tablet view */
 @media screen and (min-width: 768px) {
   nav {
-    max-width: 50%;
+    max-width: 35%;
     margin-inline: auto;
   }
 }
 /* Laptop view */
-@media screen and (min-width : 1440px){
-    nav{
-        max-width: 40%;
-        background-color: brown;
-    }
+@media screen and (min-width: 1440px) {
+  nav {
+    display: grid;
+    max-width: 30%;
+    margin-inline: auto;
+  }
+}
+/* Laptop large view */
+@media screen and (min-width: 1550px) {
+  nav {
+    max-width: 22%;
+    margin-inline: auto;
+  }
 }
 .container {
   padding-inline: 0.5rem;
