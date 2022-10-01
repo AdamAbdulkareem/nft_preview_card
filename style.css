@@ -34,7 +34,13 @@ nav {
     margin-inline: auto;
   }
 }
-
+/* Laptop view */
+@media screen and (min-width : 1440px){
+    nav{
+        max-width: 40%;
+        background-color: brown;
+    }
+}
 .container {
   padding-inline: 0.5rem;
   padding-block: 2rem;
