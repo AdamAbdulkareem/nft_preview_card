@@ -9,7 +9,7 @@
 
 body {
    display: grid;
-   height: 100vh;
+   height: 50vh;
   font-family: "Outfit", sans-serif;
   font-weight: 500;
   background-color: var(--VeryDarkBlue);
