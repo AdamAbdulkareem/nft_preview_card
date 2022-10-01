@@ -1,0 +1,75 @@
+:root {
+  --SoftBlue: hsl(215, 51%, 70%);
+  --Cyan: hsl(178, 100%, 50%);
+  --VeryDarkBlue: hsl(217, 54%, 11%);
+  --DarkBlue1: hsl(216, 50%, 16%);
+  --DarkBlue2: hsl(215, 32%, 27%);
+  --White: hsl(0, 0%, 100%);
+}
+
+body {
+  font-family: "Outfit", sans-serif;
+  font-weight: 500;
+  background-color: var(--VeryDarkBlue);
+  color: var(--White);
+}
+nav {
+  background-color: var(--DarkBlue1);
+  max-width: 90%;
+  padding-inline: 1.5rem;
+  border-radius: 1.5rem;
+}
+/* Mobile large view */
+@media screen and (min-width: 425px) {
+  nav {
+    max-width: 80%;
+    margin-inline: auto;
+  }
+}
+
+/* Tablet view */
+@media screen and (min-width: 768px) {
+  nav {
+    max-width: 50%;
+    margin-inline: auto;
+  }
+}
+
+.container {
+  padding-inline: 0.5rem;
+  padding-block: 2rem;
+}
+.headerImage {
+  max-width: 100%;
+  border-radius: 0.9rem;
+}
+.creditImage {
+  max-width: 2.5rem;
+}
+hr {
+  border: 0;
+  background-color: var(--White);
+  height: 0.05rem;
+  margin-block: 1.5rem;
+}
+.infoClass {
+  display: flex;
+  justify-content: space-between;
+}
+.priceClass {
+  color: var(--Cyan);
+}
+.priceClass,
+.timeClass,
+.creditContainer {
+  display: flex;
+  align-self: center;
+}
+.creditContainer {
+  justify-content: space-between;
+  align-items: center;
+}
+.priceClass svg,
+.timeClass svg {
+  padding-inline-end: 0.5rem;
+}
